@@ -1,0 +1,178 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hello
+    - hi
+    - hey
+    - good morning
+    - good afternoon
+    - greetings
+
+- intent: goodbye
+  examples: |
+    - goodbye
+    - see you later
+    - bye
+    - take care
+    - have a nice day
+      
+- intent: refund_policy 
+  examples: |
+    - What is your refund policy?
+    - Can I get a refund for my payment?
+    - How do I request a refund for my fees?
+    - What are the conditions for getting a refund?
+    - Tell me about your refund policy
+    - Refund process details
+    - I want a refund for my payment
+    - Are refunds allowed for the program?
+    - How do refunds work?
+    - Do you offer refunds?
+
+- intent: out_of_scope
+  examples: |
+    - What is the Prime Minister’s Internship Scheme (PMIS)? 
+    - What  is  an  internship? Why should I enrol myself in an internship program?
+    - Through the PM Internship Scheme, what kind of internships will I get? 
+    - What kind of companies will I get to intern with?  
+    - What is the duration of the internship? 
+    - Will I be sitting in a classroom during my internship?
+    - Will I get a job after my internship?
+    - Can I apply for the PM Internship Scheme?
+    - Can international candidates apply for the PM Internship Scheme?
+    - Can I apply for an internship opportunity if I am enrolled in an online/distance/ correspondence course?
+    - Is there any provision for reservation to promote diversity and inclusion?
+    - I am ineligible to apply because of my age. Can you please relax the age criteria? 
+    - Who is not eligible for the PM Internship scheme? 
+    - Will having a master’s degree help me while applying for the PM Internship Scheme? 
+    - Will I get financial assistance for doing my internship?
+    - What is the eligibility of interns to receive initial DBT and the monthly internship allowance?
+    - Will I get travel allowances or other support during the duration of the internship?  
+    - Will the insurance cover continue after the internship?  
+    - Will I receive financial assistance during the sabbatical (break) period?
+    - Will I get any financial assistance to purchase clothes for my internship? 
+    - What is an Aadhaar seeded bank account?  
+    - Will I receive the monthly internship allowance if I discontinue the internship midway? 
+    - How can I view the information on the portal in my language? 
+    - The portal is not working properly. How can I apply?
+    - I have not received OTP on my email. What should I do?
+    - I have not received OTP on my mobile number. What should I do? 
+    - I have received multiple OTPs, what should I do?
+    - Why am I unable to apply for the internship opportunities on the portal?
+    - I'm within the eligible age range, but the portal says I'm out of the age range. What should I do?
+    - I need assistance with filling out the registration details. What should I do? 
+    - I am not able to set my password. What should I do?
+    - Why  am  I  unable  to  upload  my  educational  and  skill  qualification certificates while registering on the portal?
+    - I do not have a DigiLocker Account? How can I apply?
+    - What is the application fee for the registration process? 
+    - Which documents will I require for registering on the PM Internship Scheme portal? 
+    - My mobile is updated in my Aadhaar number, but I cannot use it to link my DigiLocker account with Aadhaar. It gives an error message "Mobile number is not linked with Aadhaar?"
+    - Can I edit my details after completing the profile creation?
+    - How can I view my Candidate ID?
+    - How to fill in the qualification details?
+    - How can I seek help if I get stuck on the PMIS portal at any step?
+    - How will the interns be selected?
+    - How many internship opportunities can I apply for? 
+    - Can I change my three internship preferences on the portal? 
+    - What if I am not selected for any of my three preferred opportunities? 
+    - How can I view the complete internship details before applying?
+    - What is the maximum number of internships offers I can receive?
+    - What If I do not wish to accept the internship(s) I have been shortlisted for?
+    - If I accept an internship offer, how will I get the final offer letter?
+    - How can I apply for a specific company? I am not able to see company names.
+    - How can I view the internship opportunities near my region?
+    - There are too many opportunities to choose from. How can I search for my area of preference?
+    - Why do I need to answer the three questions after clicking the apply button?
+    - How can I know the status of my application after applying
+    - Where can I see the count of my applications submitted?
+    - How do I select Sector/Area/Field?
+    - How can I check whether I am eligible for a particular internship?
+    - Will I be notified about my application status?
+    - How can I view the provisional offer letter before accepting the offer?
+    - Can I extend the internship beyond 12 months?
+    - Can I take leaves during my internship?
+    - Will I get holidays? 
+    - In case of a medical or any other emergency, what do I do?
+    - Can I rejoin the internship after a sabbatical (break)?
+    - What happens if the sabbatical (break) period is more than two months?
+    - If I take a sabbatical (break) of less than two months, will I still get an internship certificate? 
+    - Can I request for a sabbatical (break) for reasons other than medical emergencies or family-related issues?  
+    - Will I still get an internship certificate if I leave before completion (drop out)?
+    - Can I apply again to other internships after leaving my current internship?
+    - Can I reapply for an internship after the one-year period?
+    - Will there be any training provided before the internship starts?
+    - How can the intern view the training schedule assigned by the company?
+    - Are there any performance evaluations during the internship?
+    - How can I check if I have received the one-time Direct Benefit Transfer (DBT) from the government?
+    - How will I check if I have received my monthly internship allowance?
+    - What kind of projects will I work on as an intern?
+    - What kind of clothes should I wear during my internship?
+    - Will I receive a certificate after completing the internship?
+    - How can interns raise a grievance for payment related issues?
+    - What should an intern do if they are marked as ineligible to receive the monthly internship allowance?
+    - How will the Ministry recognize interns for their performance?
+    - How would my grievance or queries be resolved?
+    - Is there a guarantee of employment after completing the internship?
+    - What are the criteria for shortlisting the Top companies for the PM Internship Scheme?
+    - My company is not included in the initial list of top companies. Can we still participate in the Prime Minister Internship Scheme?
+    - My company cannot directly provide internships. What other options do I have?
+    - What are the steps of initial login post company participation?
+    - Can the internship be extended beyond 12 months?
+    - Is it mandatory for the companies to provide training to interns?
+    - Are companies required to assign supervisors or mentors to interns?
+    - Do interns qualify as employees under the extant labour laws?
+    - What are the sources of recruiting interns for this scheme?
+    - Does an internship offer create an employer-employee relationship?
+    - Can an internship offer be construed as a promise of future employment?
+    - Are interns required to follow the rules and regulations of the establishment?
+    - Are the companies liable to provide facilities such as accommodation, transportation, canteen etc.?
+    - What will be the break-up of the monthly financial assistance to be given to interns?
+    - Can a company provide more than ₹500 as monthly assistance to the interns?
+    - Is there any specific deadline for the companies to make the monthly payment?
+    - How the monthly payments will be done if the intern is absent for few days in the month?
+    - Will the intern be eligible for the monthly internship allowance if they are marked as absconding or terminated from the internship?
+    - What is the process of monthly internship allowance on the portal?
+    - Some interns have not received their DBT payments. What can be done?
+    - Why can’t I mark some interns as eligible for monthly internship allowance?
+    - A candidate has been incorrectly marked as ineligible for receiving the monthly internship allowance. How can this be corrected?
+    - Are the companies liable to provide insurance coverage to interns?
+    - How can companies post internship opportunities?
+    - What information should be included in the internship posting?
+    - Can Partner Companies edit or remove their posted internship opportunities?
+    - What type of internship roles can be posted by company on the portal?
+    - I am unable to geotag locations properly on the PMIS portal. What should I do?
+    - Why am I unable to post or edit internships on the PMIS portal?
+    - Can network entities post internships on behalf of the parent company?
+    - How does the company confirm an intern's participation in the scheme?
+    - Is there any mechanism available to companies to deal with cases of misbehaviour/underperformance/absenteeism of the intern?
+    - Would the companies be required to devise a monitoring and evaluation framework of interns?
+    - What happens if an intern withdraws or drops out of the internship before completion?
+    - What are the general criteria for considering an intern as absconding?
+    - Will company guidelines govern the leave policy of interns?
+    - Can interns take a sabbatical?
+    - What happens if an intern's sabbatical exceeds two months?
+    - Do the companies have to provide a Certificate of Completion to interns?
+    - Why are the monthly Direct Benefit Transfer (DBT) updates not showing in the HR login?
+    - Why is the Aadhaar seeding status not updated in the PMIS portal?
+    - Can an intern be transferred from one internship ID to another?
+    - Why are some interns not visible in the My Intern Tab?
+    - I am facing issues while uploading Excel sheets. How can I resolve them?
+    - How can company assign training schedule to the interns?
+    - How can companies recognize outstanding interns? 
+    - How will the Ministry recognize the companies for their performance?
+    - What  user  types  are  allowed  to  access  the  portal  from  the industry/company side?
+    - What is the role of a Nodal Officer? 
+    - What is the recommended number of interns which can be assigned to one HR?
+    - How  can  Company Admins  view  grievances  which  are  registered  by candidates?
+    - Can HR users see the number of supervisors created for their company?
+    - I have not received my login credentials as a Nodal Officer. How can I access my account?
+
+
+
+
+
+
+
+

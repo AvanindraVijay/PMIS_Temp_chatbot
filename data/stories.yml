@@ -1,0 +1,22 @@
+version: "3.1"
+
+stories:
+- story: greet and ask for help
+  steps:
+    - intent: greet
+    - action: action_greet
+
+- story: user says goodbye
+  steps:
+    - intent: goodbye
+    - action: action_goodbye
+
+- story: user asks about refund
+  steps:
+    - intent: refund_policy
+    - action: action_refund_policy
+
+- story: out of scope PMIS scenario
+  steps:
+    - intent: out_of_scope
+    - action: action_llama_fallback

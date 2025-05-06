@@ -1,0 +1,27 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - refund_policy
+  - out_of_scope
+
+actions:
+  - action_greet
+  - action_goodbye
+  - action_refund_policy
+  - action_llama_fallback
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you with PMIS today?"
+
+  utter_goodbye:
+    - text: "Goodbye! If you have any more questions, feel free to ask."
+
+  utter_refund_policy: 
+    - text: "We're sorry, but we currently operate a no-refund policy. Please refer to our terms and conditions for more details."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

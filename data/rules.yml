@@ -1,0 +1,22 @@
+version: "3.1"
+
+rules:
+- rule: Greet the user
+  steps:
+    - intent: greet
+    - action: action_greet
+
+- rule: Say goodbye to the user
+  steps:
+    - intent: goodbye
+    - action: action_goodbye
+
+- rule: Handle refund policy
+  steps:
+    - intent: refund_policy
+    - action: action_refund_policy
+
+- rule: Out of scope rule
+  steps:
+    - intent: out_of_scope
+    - action: action_llama_fallback
