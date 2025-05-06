@@ -21,6 +21,9 @@ User Query → Rasa NLU → Intent Classification →
   └── If complex query → LLaMA + FAISS → Generated Response
 ```
 
+![image](https://github.com/user-attachments/assets/a3b80b3d-60f0-407d-a889-0e966accf34b)
+
+
 ## 🔧 Prerequisites
 
 - Python 3.8+
