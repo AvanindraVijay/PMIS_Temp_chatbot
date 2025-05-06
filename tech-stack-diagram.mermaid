@@ -1,0 +1,82 @@
+graph TD
+    subgraph "User Interface"
+        A[User Chat Interface]
+    end
+    
+    subgraph "Rasa Framework"
+        B[Rasa NLU]
+        C[Intent Classification]
+        D[Dialogue Management]
+        E[Static Response Engine]
+        F[Fallback Mechanism]
+    end
+    
+    subgraph "LLaMA Engine"
+        G[LLaMA 2 7B Quantized Model]
+        H[Context Processor]
+        I[Response Generator]
+    end
+    
+    subgraph "Knowledge Base"
+        J[FAISS Vector Database]
+        K[PDF Document Chunks]
+        L[Sentence Transformer Embeddings]
+    end
+    
+    subgraph "Backend Services"
+        M[FastAPI]
+        N[Webhook Handlers]
+        O[Custom Actions]
+    end
+    
+    subgraph "Data Processing"
+        P[Document Loader]
+        Q[Text Chunking]
+        R[Embedding Generation]
+    end
+    
+    %% User flow
+    A -->|"User Query"| B
+    B -->|"Process Text"| C
+    C -->|"Identify Intent"| D
+    
+    %% Rasa decision flow
+    D -->|"Static Intent"| E
+    D -->|"Complex Query"| F
+    E -->|"Predefined Response"| A
+    
+    %% Fallback to LLaMA
+    F -->|"Forward Query"| M
+    M -->|"Process Request"| N
+    N -->|"Query Context"| H
+    
+    %% LLaMA processing
+    H -->|"Retrieve Context"| J
+    J -->|"Similar Chunks"| I
+    I -->|"Generate Response"| M
+    M -->|"Return Response"| F
+    F -->|"Deliver Response"| A
+    
+    %% Knowledge base creation
+    P -->|"Load Documents"| Q
+    Q -->|"Split Text"| R
+    R -->|"Create Embeddings"| L
+    L -->|"Index Vectors"| J
+    K -->|"Stored As"| J
+    
+    %% Custom actions
+    O -->|"Handle"| E
+    O -->|"Connect to"| M
+
+    classDef primary fill:#4285F4,stroke:#333,stroke-width:1px,color:white
+    classDef secondary fill:#34A853,stroke:#333,stroke-width:1px,color:white
+    classDef tertiary fill:#FBBC05,stroke:#333,stroke-width:1px,color:white
+    classDef quaternary fill:#EA4335,stroke:#333,stroke-width:1px,color:white
+    classDef interface fill:#9C27B0,stroke:#333,stroke-width:1px,color:white
+    
+    class A interface
+    class B,C,D,E,F primary
+    class G,H,I quaternary
+    class J,K,L tertiary
+    class M,N,O secondary
+    class P,Q,R tertiary
